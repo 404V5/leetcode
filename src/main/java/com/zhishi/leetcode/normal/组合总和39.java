@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by songpb on 2020/9/9.
+ * https://leetcode-cn.com/problems/combination-sum/
  */
 public class 组合总和39 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
