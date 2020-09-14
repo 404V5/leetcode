@@ -1,4 +1,4 @@
-package com.zhishi.leetcode.normal;
+package com.zhishi.leetcode.剑指Offer;
 
 /**
  * Created by songpb on 2020/9/14.

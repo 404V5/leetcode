@@ -36,13 +36,3 @@ public class 平衡二叉树贰55 {
 //    }
 
 }
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
