@@ -1,8 +1,6 @@
 package com.zhishi.leetcode.剑指Offer;
 
 
-import com.zhishi.leetcode.normal.二叉树的层平均值637;
-
 /**
  * Created by songpb on 2020/9/12.
  * https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
