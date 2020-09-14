@@ -67,4 +67,11 @@ public class 二叉树的层平均值637 {
         return averages;
     }
 
+    public static void main(String[] args) {
+        二叉树的层平均值637 test = new 二叉树的层平均值637();
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        System.out.println(test.averageOfLevels(root));
+    }
 }

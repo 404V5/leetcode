@@ -1,6 +1,8 @@
 package com.zhishi.leetcode.剑指Offer;
 
 
+import com.zhishi.leetcode.normal.二叉树的层平均值637;
+
 /**
  * Created by songpb on 2020/9/12.
  * https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
@@ -34,5 +36,12 @@ public class 平衡二叉树贰55 {
 //        if (root == null) return 0;
 //        return Math.max(depth(root.left), depth(root.right)) + 1;
 //    }
+    public static void main(String[] args) {
+        平衡二叉树贰55 test = new 平衡二叉树贰55();
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        System.out.println(test.isBalanced(root));
+    }
 
 }
