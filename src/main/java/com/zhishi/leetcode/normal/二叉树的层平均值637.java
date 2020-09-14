@@ -41,7 +41,9 @@ public class 二叉树的层平均值637 {
 //        dfs(root.right, level + 1, counts, sums);
 //    }
 
-    //方法二 广度优先遍历
+    /**
+     * 方法二 广度优先遍历
+     */
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> averages = new ArrayList<Double>();
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
@@ -65,14 +67,4 @@ public class 二叉树的层平均值637 {
         return averages;
     }
 
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }
