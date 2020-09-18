@@ -106,14 +106,14 @@ public class 解数独37 {
     private int[] column = new int[9];
     private int[][] block = new int[3][3];
     private boolean valid = false;
-    private List<int[]> spaces = new ArrayList<int[]>();
+    private List<int[]> spaces = new ArrayList<>();
 
     /**
      * 方法三 枚举优化
      *
-     * @param board
+     * @param board 二维字符数组
      */
-    public void solveSudoku(char[][] board) {
+    private void solveSudoku(char[][] board) {
         for (int i = 0; i < 9; ++i) {
             for (int j = 0; j < 9; ++j) {
                 if (board[i][j] != '.') {
@@ -154,7 +154,7 @@ public class 解数独37 {
         dfs(board, 0);
     }
 
-    public void dfs(char[][] board, int pos) {
+    private void dfs(char[][] board, int pos) {
         if (pos == spaces.size()) {
             valid = true;
             return;
@@ -173,7 +173,7 @@ public class 解数独37 {
         }
     }
 
-    public void flip(int i, int j, int digit) {
+    private  void flip(int i, int j, int digit) {
         line[i] ^= (1 << digit);
         column[j] ^= (1 << digit);
         block[i / 3][j / 3] ^= (1 << digit);

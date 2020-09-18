@@ -2,9 +2,10 @@ package com.zhishi.leetcode.util;
 
 /**
  * Created by songpb on 2020/9/15.
+ * 摩尔斯转换
  */
 public class MorseCodeUtil {
-    public static String morseCodeToBinary(String morseCode) {
+    private static String morseCodeToBinary(String morseCode) {
         char[] morseCodeArray = morseCode.toCharArray();
         char[] returnArray = new char[morseCodeArray.length];
         for (int i = 0; i < morseCodeArray.length; i++) {
@@ -24,7 +25,7 @@ public class MorseCodeUtil {
         return new String(returnArray);
     }
 
-    public static String binaryToMorseCode(String binary) {
+    private static String binaryToMorseCode(String binary) {
         char[] binaryArray = binary.toCharArray();
         char[] returnArray = new char[binaryArray.length];
         for (int i = 0; i < binaryArray.length; i++) {
