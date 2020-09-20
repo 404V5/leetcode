@@ -7,7 +7,7 @@ import com.zhishi.leetcode.util.TreeNode;
  * https://leetcode-cn.com/problems/invert-binary-tree/
  */
 public class 翻转二叉树226 {
-    public TreeNode invertTree(TreeNode root) {
+    private TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
         }
@@ -16,5 +16,9 @@ public class 翻转二叉树226 {
         root.left = right;
         root.right = left;
         return root;
+    }
+
+    public static void main(String[] args) {
+        翻转二叉树226 test= new 翻转二叉树226();
     }
 }

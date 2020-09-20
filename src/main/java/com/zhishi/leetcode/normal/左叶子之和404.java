@@ -35,7 +35,7 @@ public class 左叶子之和404 {
      * 方法二: 广度优先遍历
      */
 
-    public int sumOfLeftLeaves(TreeNode root) {
+    private int sumOfLeftLeaves(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -61,7 +61,7 @@ public class 左叶子之和404 {
         return ans;
     }
 
-    public boolean isLeafNode(TreeNode node) {
+    private boolean isLeafNode(TreeNode node) {
         return node.left == null && node.right == null;
     }
 }

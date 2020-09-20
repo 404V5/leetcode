@@ -8,7 +8,7 @@ public class 左旋转字符串贰58 {
     /**
      * 方法一 字符串切片
      */
-    public String reverseLeftWords(String s, int n) {
+    private String reverseLeftWords(String s, int n) {
         return s.substring(n, s.length()) + s.substring(0, n);
     }
     /**

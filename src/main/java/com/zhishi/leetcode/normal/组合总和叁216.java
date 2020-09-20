@@ -11,10 +11,10 @@ import java.util.List;
  * https://leetcode-cn.com/problems/combination-sum-iii/
  */
 public class 组合总和叁216 {
-    List<List<Integer>> ans = new ArrayList<>();
+    private List<List<Integer>> ans = new ArrayList<>();
     //尽量不要使用遗留的Stack，Deque完成可以实现Stack功能
-    Deque<Integer> path = new ArrayDeque<>();
-    public List<List<Integer>> combinationSum3(int k, int n) {
+    private Deque<Integer> path = new ArrayDeque<>();
+    private List<List<Integer>> combinationSum3(int k, int n) {
         dfs(k,n,1);
         return ans;
     }

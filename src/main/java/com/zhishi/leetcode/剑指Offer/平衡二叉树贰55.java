@@ -11,7 +11,7 @@ public class 平衡二叉树贰55 {
     /**
      * 方法一 后序遍历 + 剪枝 （从底至顶）
      */
-    public boolean isBalanced(TreeNode root) {
+    private boolean isBalanced(TreeNode root) {
         return recur(root) != -1;
     }
 

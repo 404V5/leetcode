@@ -8,19 +8,19 @@ import java.util.List;
  * https://leetcode-cn.com/problems/combination-sum/
  */
 public class 组合总和39 {
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> ans = new ArrayList<List<Integer>>();
-        List<Integer> combine= new ArrayList<Integer>();
+    private List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> combine= new ArrayList<>();
         dfs(candidates,target,ans,combine,0);
         return ans;
     }
 
-    public void dfs(int[] candidates ,int target ,List<List<Integer>> ans,List<Integer> combine,int idx){
+    private void dfs(int[] candidates ,int target ,List<List<Integer>> ans,List<Integer> combine,int idx){
         if(idx == candidates.length){
             return;
         }
         if(target == 0){
-            ans.add(new ArrayList<Integer>(combine));
+            ans.add(new ArrayList<>(combine));
             return;
         }
         //直接跳过

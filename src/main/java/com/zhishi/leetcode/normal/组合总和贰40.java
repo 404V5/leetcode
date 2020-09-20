@@ -9,10 +9,10 @@ import java.util.List;
  * https://leetcode-cn.com/problems/combination-sum-ii/submissions/
  */
 public class 组合总和贰40 {
-    List<int[]> freq = new ArrayList<int[]>();
-    List<List<Integer>> ans = new ArrayList<List<Integer>>();
-    List<Integer> sequence = new ArrayList<Integer>();
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+    private List<int[]> freq = new ArrayList<>();
+    private List<List<Integer>> ans = new ArrayList<>();
+    private List<Integer> sequence = new ArrayList<>();
+    private List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);
         for(int num: candidates){
             int size = freq.size();
@@ -26,9 +26,9 @@ public class 组合总和贰40 {
         return ans;
     }
 
-    public void dfs (int pos,int rest){
+    private void dfs (int pos,int rest){
         if(rest ==0){
-            ans.add(new ArrayList<Integer>(sequence));
+            ans.add(new ArrayList<>(sequence));
             return;
         }
         if(pos == freq.size() || rest< freq.get(pos)[0]){
