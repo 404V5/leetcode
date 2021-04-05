@@ -1,4 +1,4 @@
-package com.zhishi.designpattern.Factory;
+package com.zhishi.designpattern.factory;
 
 public class WithoutFactoryPatternDemo {
 

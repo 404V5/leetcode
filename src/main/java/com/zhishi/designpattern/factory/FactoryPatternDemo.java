@@ -1,4 +1,4 @@
-package com.zhishi.designpattern.Factory;
+package com.zhishi.designpattern.factory;
 
 /**
  * 我们在项目中，大量的用spring ioc这块功能，其实本身就是在实践工厂模式
