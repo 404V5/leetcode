@@ -1,4 +1,4 @@
-package com.zhishi.designpattern.method;
+package com.zhishi.designpattern.Factory;
 
 public class FactoryMethodPettern {
 
